@@ -1,3 +1,5 @@
+___author___='Zachary Brody'
+
 def index (testlist, lookingFor):
     i = 0
     index = 0
