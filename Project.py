@@ -1,11 +1,11 @@
 ___author___='Zachary Brody'
 
-def index (testlist, lookingFor):
+def index (list, objectToFind):
     i = 0
     index = 0
     try:
-        while i < len(testlist):
-            index = testlist.index(lookingFor,i)
+        while i < len(list):
+            index = list.index(objectToFind,i)
             i = index + 1
             return index
     except ValueError: #testlist.index() cannot find lookingFor
