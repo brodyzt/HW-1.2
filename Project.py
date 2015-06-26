@@ -18,13 +18,13 @@ def contentsOfFile(file):
         tempString = str(tempString) + str(line)
     return tempString
 
-
-
 print("Before continuing with the program, enter the plain English text into the 'Plain Text' file and enter the encrypted text into 'Plain Text'")
 while(raw_input("Type 'done' and hit enter once completed: ") != 'done'):
     pass
+
 originalChar = []
 newChar = []
+
 for x in range(0, 2):
     alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z', ' ']
     if(x == 0):
@@ -42,7 +42,6 @@ for x in range(0, 2):
         newChar = alphabet
     '''for x in range(0, len(alphabet)):
         print(str(alphabet[x]) + ': ' + str(frequencies[x]))'''
-
 
 translatedText = ''
 textToDecrypt = contentsOfFile(open('Encrypted Text', 'r'))
