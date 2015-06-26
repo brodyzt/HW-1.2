@@ -1,15 +1,3 @@
-___author___='Zachary Brody'
-
-def index (list, objectToFind):
-    i = 0
-    index = 0
-    try:
-        while i < len(list):
-            index = list.index(objectToFind,i)
-            i = index + 1
-            return index
-    except ValueError: #testlist.index() cannot find lookingFor
-        pass
 def sortList (list):
     listSorted = False
     while(listSorted == False):
@@ -60,7 +48,6 @@ translatedText = ''
 textToDecrypt = contentsOfFile(open('Encrypted Text', 'r'))
 for char in textToDecrypt:
     if(char in newChar):
-        indexNum = index(newChar, char)
-        translatedText = translatedText + originalChar[indexNum]
+        translatedText = translatedText + originalChar[newChar.index(char)]
 
 print('\nDecrypted Text: ' + translatedText)
