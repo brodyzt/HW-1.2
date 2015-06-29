@@ -25,7 +25,7 @@ while(raw_input("Type 'done' and hit enter once completed: ") != 'done'):
 originalChar = []
 newChar = []
 
-for x in range(0, 2):
+for x in range(2):
     alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z', ' ']
     if(x == 0):
         text = contentsOfFile(open('Plain Text', 'r'))
@@ -40,8 +40,6 @@ for x in range(0, 2):
         originalChar = alphabet
     else:
         newChar = alphabet
-    '''for x in range(0, len(alphabet)):
-        print(str(alphabet[x]) + ': ' + str(frequencies[x]))'''
 
 translatedText = ''
 textToDecrypt = contentsOfFile(open('Encrypted Text', 'r'))
